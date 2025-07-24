@@ -6,6 +6,11 @@
 ## There is also a section for Tenant Email requesting Esign
   - await page1.getByRole('textbox', { name: '* Email' }).fill('%{tenant email}');
 
+### to run the tests in terminal use these commands
+- Headless
+```npx playwright test```
+- GUI
+```npx playwirght test --ui```
 
 .
 1. createVTSentry.spec.ts
