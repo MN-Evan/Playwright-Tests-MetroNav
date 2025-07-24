@@ -4,7 +4,7 @@
   - await page.getByRole('textbox', { name: 'Username' }).fill('${your MN email}');
   - await page.getByRole('textbox', { name: 'Password' }).fill('${your password}');
 ## There is also a section for Tenant Email requesting Esign
-  - await page1.getByRole('textbox', { name: '* Email' }).fill('%{tenant email}');
+  - await page1.getByRole('textbox', { name: '* Email' }).fill('${tenant email}');
 
 ### to run the tests in terminal use these commands
 - Headless
