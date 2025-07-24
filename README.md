@@ -1,10 +1,13 @@
 # Playwright-Tests-MetroNav
 
 Due to the need of a testing account without 2FA there are lines in the code where you will need to input an account email and password
-  await page.getByRole('textbox', { name: 'Username' }).fill('${your MN email}');
-  await page.getByRole('textbox', { name: 'Password' }).fill('${your password}');
+  - await page.getByRole('textbox', { name: 'Username' }).fill('${your MN email}');
+  - await page.getByRole('textbox', { name: 'Password' }).fill('${your password}');
+There is also a section for Tenant Email requesting Esign
+  - await page1.getByRole('textbox', { name: '* Email' }).fill('%{tenant email}');
 
 
+.
 1. createVTSentry.spec.ts
   - starts a new LM case
   - adds a tenant, address, suite, and Proposal
